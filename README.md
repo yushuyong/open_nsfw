@@ -39,6 +39,8 @@ Install Docker Engine
 Build a caffe docker image (CPU) 
 ```
 docker build -t caffe:cpu https://raw.githubusercontent.com/BVLC/caffe/master/docker/cpu/Dockerfile
+修复git项目下载慢的问题，同时修改配置文件，防止pip升级后报错的问题
+docker build -t caffe:cpu http://016888.net/Dockerfile
 ```
 
 Check the caffe installation
